@@ -1,14 +1,14 @@
-package com.example.appinmobiliariahugo.ui.gallery;
+package com.example.appinmobiliariahugo.ui.propiedades;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class PropiedadesViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public PropiedadesViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is gallery fragment");
     }

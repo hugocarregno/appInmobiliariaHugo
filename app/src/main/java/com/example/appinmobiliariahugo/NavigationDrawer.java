@@ -63,8 +63,8 @@ public class NavigationDrawer extends AppCompatActivity {
         usuario.setText(Usuario);
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
-                R.id.nav_tools, R.id.nav_share, R.id.nav_send)
+                R.id.nav_perfil, R.id.nav_propiedades, R.id.nav_inquilinos,
+                R.id.nav_pagos, R.id.nav_contratos,R.id.nav_cerrarsesion)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);

@@ -1,4 +1,4 @@
-package com.example.appinmobiliariahugo.ui.share;
+package com.example.appinmobiliariahugo.ui.contratos;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.appinmobiliariahugo.R;
 
-public class ShareFragment extends Fragment {
+public class ContratosFragment extends Fragment {
 
-    private ShareViewModel shareViewModel;
+    private ContratosViewModel contratosViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        shareViewModel =
-                ViewModelProviders.of(this).get(ShareViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_share, container, false);
-        final TextView textView = root.findViewById(R.id.text_share);
-        shareViewModel.getText().observe(this, new Observer<String>() {
+        contratosViewModel =
+                ViewModelProviders.of(this).get(ContratosViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_contratos, container, false);
+        final TextView textView = root.findViewById(R.id.text_send);
+        contratosViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

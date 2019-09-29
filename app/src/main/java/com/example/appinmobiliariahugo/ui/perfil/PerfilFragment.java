@@ -1,4 +1,4 @@
-package com.example.appinmobiliariahugo.ui.home;
+package com.example.appinmobiliariahugo.ui.perfil;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,15 +14,15 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.appinmobiliariahugo.R;
 
-public class HomeFragment extends Fragment {
+public class PerfilFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
+    private PerfilViewModel homeViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
-                ViewModelProviders.of(this).get(HomeViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
+                ViewModelProviders.of(this).get(PerfilViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_perfil, container, false);
         final TextView textView = root.findViewById(R.id.text_home);
         homeViewModel.getText().observe(this, new Observer<String>() {
             @Override
