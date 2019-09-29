@@ -28,8 +28,10 @@ import android.widget.Toast;
 public class NavigationDrawer extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
-    //TextView usuario;
-    TextView email;
+    private TextView usuario;
+    private TextView email;
+    private String Email;
+    private String Usuario;
     Bundle datos;
 
 
@@ -37,19 +39,6 @@ public class NavigationDrawer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_drawer);
-
-        //Log.d("intent",getIntent().getDataString());
-        //String Usuario = datos.getString("Usuario");
-        //Toast.makeText(this, Usuario, Toast.LENGTH_SHORT).show();
-        //usuario = findViewById(R.id.tvUsuario);
-        //
-
-
-        //usuario.setText(Usuario);
-
-
-
-
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -63,13 +52,15 @@ public class NavigationDrawer extends AppCompatActivity {
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView =(NavigationView) findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
-        /*View hView = navigationView.getHeaderView(0);
-        email = hView.findViewById(R.id.tvEmail);
+        View hView = navigationView.getHeaderView(0);
+
         datos = getIntent().getExtras();
-        String Email = datos.getString("Email");
-        Toast.makeText(this, Email, Toast.LENGTH_SHORT).show();
+        Email = datos.getString("Email");
+        Usuario = datos.getString("Usuario");
+        email = hView.findViewById(R.id.tvEmail);
+        usuario = hView.findViewById(R.id.tvUsuario);
         email.setText(Email);
-        navigationView.setNavigationItemSelectedListener((NavigationView.OnNavigationItemSelectedListener) this);*/
+        usuario.setText(Usuario);
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,

@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
                 }else{
                     if(email.getText().toString().equals("jperez@ulp.edu.ar") && password.getText().toString().equals("aaaa")){
                         Intent i = new Intent(MainActivity.this, NavigationDrawer.class);
-                        //i.putExtra("Usuario","Juan Perez");
-                        //i.putExtra("Email",email.getText().toString());
+                        i.putExtra("Usuario","Juan Perez");
+                        i.putExtra("Email",email.getText().toString());
                         startActivity(i);
                     }else{
                         Toast.makeText(getApplicationContext(), "Usuario o contraseña incorrecta",Toast.LENGTH_LONG).show();
