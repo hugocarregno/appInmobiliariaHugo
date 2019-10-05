@@ -23,22 +23,21 @@ public class MainActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-          /*      if(email.getText().toString().isEmpty()){
+                if(email.getText().toString().isEmpty()){
                     Toast.makeText(getApplicationContext(), "Ingrese Email",Toast.LENGTH_LONG).show();
                 }else if(password.getText().toString().isEmpty()){
                     Toast.makeText(getApplicationContext(), "Ingrese Password",Toast.LENGTH_LONG).show();
                 }else{
                     if(email.getText().toString().equals("jperez@ulp.edu.ar") && password.getText().toString().equals("aaaa")){
-            */            Intent i = new Intent(MainActivity.this, NavigationDrawer.class);
+                        Intent i = new Intent(MainActivity.this, NavigationDrawer.class);
                         i.putExtra("Usuario","Juan Perez");
                         i.putExtra("Email",email.getText().toString());
                         startActivity(i);
-              /*      }else{
+                    }else{
                         Toast.makeText(getApplicationContext(), "Usuario o contraseña incorrecta",Toast.LENGTH_LONG).show();
                     }
-
                 }
-*/            }
+            }
         });
     }
 }
