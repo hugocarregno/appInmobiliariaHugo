@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tvNumeroPago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#13E9A4"
+        android:text="Numero de Pago"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tvNumeroPagoValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumeroPago" />
+    <TextView
+        android:id="@+id/tvFechaInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#13E9A4"
+        android:text="FECHA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumeroPagoValor" />
+    <TextView
+        android:id="@+id/tvFechaInicioValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFechaInicio" />
+    <TextView
+        android:id="@+id/tvImporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#13E9A4"
+        android:text="IMPORTE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFechaInicioValor" />
+    <TextView
+        android:id="@+id/tvImporteValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvImporte" />
+    <TextView
+        android:id="@+id/tvSeparador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0E0D0D"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvImporteValor" />
+</androidx.constraintlayout.widget.ConstraintLayout>

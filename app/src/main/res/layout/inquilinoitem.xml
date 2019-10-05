@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tvDniInquilino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#33FCFF"
+        android:text="DNI"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDniInquilinoValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDniInquilino" />
+
+    <TextView
+        android:id="@+id/tvApellidoInquilino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#33FCFF"
+        android:text="Apellido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDniInquilinoValor" />
+
+    <TextView
+        android:id="@+id/tvApellidoInquilinoValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvApellidoInquilino" />
+
+    <TextView
+        android:id="@+id/tvNombreInquilino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#33FCFF"
+        android:text="Nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvApellidoInquilinoValor" />
+
+    <TextView
+        android:id="@+id/tvNombreInquilinoValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombreInquilino" />
+
+    <TextView
+        android:id="@+id/tvDireccionInquilino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#33FCFF"
+        android:text="DIRECCION"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombreInquilinoValor" />
+
+    <TextView
+        android:id="@+id/tvDireccionInquilinoValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDireccionInquilino" />
+
+    <TextView
+        android:id="@+id/tvTelefonoInquilino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#33FCFF"
+        android:text="TELEFONO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDireccionInquilinoValor" />
+
+    <TextView
+        android:id="@+id/tvTelefonoInquilinoValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTelefonoInquilino" />
+
+    <TextView
+        android:id="@+id/tvSeparador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTelefonoInquilinoValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
