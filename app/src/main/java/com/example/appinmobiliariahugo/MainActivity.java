@@ -17,6 +17,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //agrego icono en action bar
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+
         email = findViewById(R.id.eTEmail);
         password = findViewById(R.id.eTPassword);
         login = findViewById(R.id.btnLogin);
